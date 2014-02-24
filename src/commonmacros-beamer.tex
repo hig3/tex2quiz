@@ -1,0 +1,59 @@
+\usepackage{amsmath,amsfonts,ifthen,multicol,array,amssymb}
+\usepackage{verbatim}
+\usepackage{wrapfig}
+\usepackage{fancybox}    
+\usepackage{bm}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{picins}
+\usepackage{ulem}
+\usepackage{ascmac}
+
+\hypersetup{
+%    bookmarks=true,%
+    bookmarksnumbered=true,%
+     bookmarkstype=toc,%
+    pdfpagemode=UseOutlines,%FullScreen,%UseThumbs,% UseOutlines, %None
+    pdfstartview={FitH -32768},% bounding box を fit, use default
+     pdftitle=タイトル,
+     pdfsubject=サブタイトル,
+     pdfauthor=文書の所有者,
+     pdfkeywords=キーワード,
+%    pdfcreater={}, % 元のファイルを作ったソフト 自動的に加えられる
+%    pdfproducer={}, % pdf に変換したソフト 自動的に加えられる
+%    baserul={}
+    linkcolor=cyan%
+}
+ \ifnum 42146=\euc"A4A2 \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}\else
+ \AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}}\fi
+   \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
+\AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
+
+\usetheme{Boadilla}
+%\usetheme{Madrid}
+%\usetheme{Singapore}
+%\usetheme{Copenhagen}
+%\usetheme{Warsaw}
+\usecolortheme{seahorse}
+
+% disable navigation
+\setbeamertemplate{navigation symbols}{} 
+
+% fonts
+%\usepackage{txfonts}
+%\mathversion{bold}
+\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\kanjifamilydefault}{\gtdefault}
+
+\setbeamerfont{title}{size=\large,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{frametitle}[default][center]
+\usefonttheme{professionalfonts} 
+\setbeamercovered{transparent=10}
+
+\useoutertheme{infolines}
+\setbeamertemplate{headline}[infolines theme]
+\setbeamertemplate{footline}[infolines theme]
+
+
+

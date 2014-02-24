@@ -1,0 +1,25 @@
+% -*- coding:utf-8 -*-
+\renewenvironment{theme}[1]{\subsection{#1}}{}
+\renewenvironment{memo}{\begin{description}}{\end{description}}
+\renewenvironment{prob}{\subsubsection*{問題}}{}
+\renewenvironment{ans}{\subsubsection*{結果}}{}
+\renewenvironment{sol}{\subsubsection*{解答}}{}
+\renewenvironment{rem}{\subsubsection*{Remark}}{}
+\renewenvironment{forta}{\subsubsection*{For TA}}{$\heartsuit$}
+\renewenvironment{comm}{\comment}{\endcomment}
+%\renewenvironment{src}{\subsubsection*{sourcet}\begin{lstlisting}}{\end{lstlisting}}
+
+\renewcommand{\probid}[1]{\gdef\theprobid{#1}\item[prob-id]#1}
+\renewcommand{\probtag}[1]{\item[prob-tag]#1}
+\renewcommand{\probtodo}[1]{\item[prob-todo]#1}
+\renewcommand{\probnote}[1]{\item[prob-note]#1}
+\renewcommand{\probcourse}[1]{\item[prob-course]#1}
+\renewcommand{\probquiztype}[1]{\item[prob-quiztype]#1}
+\renewcommand{\probtimestamp}[1]{\item[prob-timestamp]#1}
+\renewcommand{\probused}[1]{\item[prob-used]#1}
+\renewcommand{\probparent}[1]{\item[prob-parent]#1}
+\renewcommand{\probchild}[1]{\item[prob-child]#1}
+\renewcommand{\probalternative}[1]{\item[prob-alternative]#1}
+
+\renewcommand{\itemtrue}{\item[$\circ$]}
+\renewcommand{\itemfalse}{\item[$\times$]}

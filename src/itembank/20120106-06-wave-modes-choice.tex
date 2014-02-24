@@ -1,0 +1,36 @@
+\makeatletter  
+\@ifundefined{thesection}{%
+  \input{../dpreamble.tex}%
+  }{}%
+\makeatother
+
+
+\begin{theme}{波動の固有モード}
+  \begin{memo}    
+    \probtimestamp{Time-stamp: "2012-08-03 Fri 14:40 JST hig"}
+    \probused{mathphb 2012 L12}
+    \probquiztype{multichoice}
+  \end{memo}
+  \begin{prob}
+    固定境界条件 $u(0,t)=u(L,t)=0$ を課した波動方程式
+    $$\frac{\partial^2 u}{\partial t^2}=v^2\frac{\partial^2 u}{\partial x^2}(x,t)$$
+の固有モードを $g^{(\ell)}(x,t;\theta)$ とする($\ell=1,2,3,\ldots$). 解になってないのはどれ?
+    \begin{enumerate}
+    \itemfalse $g^{(1)}(x,t;0)-g^{(2)}(x,t;\pi)$
+    \itemtrue $g^{(2)}(x,t;0)\times g^{(3)}(x,t;\pi)$
+    \itemtrue $1-2g^{(1)}(x,t;0)$
+    \itemfalse $-5g^{(1)}(x,t;\pi)$
+    \itemtrue $(g^{(1)}(x,t;0))^2$
+    \end{enumerate}
+  \end{prob}
+  \begin{sol}
+
+  \end{sol}
+\end{theme}
+
+\makeatletter
+\@ifundefined{@single}{}{%
+  \end{document}%
+}
+\makeatother
+

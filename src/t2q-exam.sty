@@ -1,0 +1,78 @@
+\renewenvironment{theme}[1]{\subsection{#1}}{}
+\renewenvironment{memo}{\comment}{\endcomment}
+\renewenvironment{prob}{}{}
+\renewenvironment{ans}{\comment}{\endcomment}
+\renewenvironment{sol}{\comment}{\endcomment}
+\renewenvironment{rem}{\comment}{\endcomment}
+\renewenvironment{forta}{\comment}{\endcomment}
+\renewenvironment{comm}{\comment}{\endcomment}
+
+\renewcommand{\probid}[1]{\gdef\theprobid{#1}}
+\renewcommand{\probtag}[1]{}
+\renewcommand{\probtodo}[1]{}
+\renewcommand{\probnote}[1]{}
+\renewcommand{\probcourse}[1]{}
+\renewcommand{\probquiztype}[1]{}
+\renewcommand{\probtimestamp}[1]{}
+\renewcommand{\probused}[1]{}
+\renewcommand{\probparent}[1]{}
+\renewcommand{\probchild}[1]{}
+\renewcommand{\probalternative}[1]{}
+% \newcommand{\probid}[1]{\item[prob-id]#1}
+% \newcommand{\probtag}[1]{prob-tag #1}
+% \newcommand{\probtodo}[1]{prob-todo #1}
+% \newcommand{\probnote}[1]{prob-note #1}
+% \newcommand{\probcourse}[1]{prob-course #1}
+% \newcommand{\probquiztype}[1]{prob-quiztype #1}
+% \newcommand{\probtimestamp}[1]{prob-timestamp #1}
+% \newcommand{\probused}[1]{prob-used #1}
+% \newcommand{\probparent}[1]{prob-parent #1}
+% \newcommand{\probchild}[1]{prob-child #1}
+% \newcommand{\probalternative}[1]{prob-alternative #1}
+
+\renewcommand{\itemtrue}{\item}
+\renewcommand{\itemfalse}{\item}
+
+
+\newcommand{\probmode}{
+\renewenvironment{theme}[1]{}{}
+\renewenvironment{memo}{}{}
+\renewenvironment{prob}{}{}
+\renewenvironment{ans}{\comment}{\endcomment}
+\renewenvironment{sol}{\comment}{\endcomment}
+\renewenvironment{rem}{\comment}{\endcomment}
+\renewenvironment{forta}{\comment}{\endcomment}
+\renewenvironment{comm}{\comment}{\endcomment}
+ 
+\renewcommand{\itemtrue}{\item}
+\renewcommand{\itemfalse}{\item}
+}
+
+\newcommand{\solmode}{
+\renewenvironment{theme}[1]{}{}
+\renewenvironment{memo}{}{}
+\renewenvironment{prob}{\comment}{\endcomment}
+\renewenvironment{ans}{\comment}{\endcomment}
+\renewenvironment{sol}{}{}
+\renewenvironment{rem}{\comment}{\endcomment}
+\renewenvironment{forta}{\comment}{\endcomment}
+\renewenvironment{comm}{\comment}{\endcomment}
+
+\renewcommand{\itemtrue}{\item}
+\renewcommand{\itemfalse}{\item}
+}
+
+\newcommand{\ansmode}{
+\renewenvironment{theme}[2][]{}{}
+%\renewenvironment{memo}{\comment}{\endcomment}
+\renewenvironment{memo}{}{}
+\renewenvironment{prob}{\comment}{\endcomment}
+\renewenvironment{ans}{}{}
+\renewenvironment{sol}{\comment}{\endcomment}
+\renewenvironment{rem}{\comment}{\endcomment}
+\renewenvironment{forta}{\comment}{\endcomment}
+\renewenvironment{comm}{\comment}{\endcomment}
+
+\renewcommand{\itemtrue}{\item}
+\renewcommand{\itemfalse}{\item}
+}

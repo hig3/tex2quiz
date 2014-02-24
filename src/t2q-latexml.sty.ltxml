@@ -1,0 +1,50 @@
+# -*- CPERL -*-
+# /======================================================= #
+# |  t2q-draft.sty - Implementation for LaTeXML     | #
+# |=======================================================| #
+
+package LaTeXML::Package::Pool;
+use strict;
+use LaTeXML::Package;
+
+#DefMacro('\thesection','1');
+
+# abort after one input file
+#DefConstructor('\\@ifundefined{}{}{}','');
+
+# no effect
+#DefConstructor('\@@ifundefined{}{}{}','');
+
+DefMacro('\@ifundefined{}{}{}','');
+
+
+#RegisterNamespace(prob=>"http://www.a.math.ryukoku.ac.jp/~hig/proj/t2q/");
+
+# Used to put double rules before & after a tabular.
+#DefEnvironment('{theme}{}',"<ltx:para class='theme'><ltx:note class='title'>#1</ltx:note>#body</ltx:para>");
+DefEnvironment('{theme}{}',"<ltx:section class='theme'><ltx:note class='title'>#1</ltx:note>#body</ltx:section>");
+DefEnvironment('{prob}','<ltx:theorem class="problem">#body</ltx:theorem>');
+DefEnvironment('{sol}','<ltx:theorem class="solution">#body</ltx:theorem>');
+DefEnvironment('{ans}','<ltx:theorem class="answer">#body</ltx:theorem>');
+DefEnvironment('{rem}','!<ltx:theorem class="remark">#body</ltx:theorem>');
+DefEnvironment('{forta}','<ltx:theorem class="forta">#body</ltx:theorem>');
+DefEnvironment('{comm}','<ltx:theorem class="comment">#body</ltx:theorem>');
+DefEnvironment('{memo}','<ltx:theorem class="memo">#body</ltx:theorem>');
+
+
+DefConstructor('\probid{}','<ltx:note class="probid">#1</ltx:note>');
+DefConstructor('\probtag{}',"<ltx:note class='tag'>#1</ltx:note>");
+DefConstructor('\probtodo{}',"<ltx:note class='todo'>#1</ltx:note>");
+DefConstructor('\probnote{}',"<ltx:note class='note'>#1</ltx:note>");
+DefConstructor('\probcourse{}',"<ltx:note class='course'>#1</ltx:note>");
+DefConstructor('\probquiztype{}',"<ltx:note class='quiztype'>#1</ltx:note>");
+DefConstructor('\probtimestamp{}',"<ltx:note class='timestamp'>#1</ltx:note>");
+DefConstructor('\probused{}',"<ltx:note class='usedin'>#1</ltx:note>");
+DefConstructor('\probparent{}',"<ltx:note class='parent'>#1</ltx:note>");
+DefConstructor('\probchild{}',"<ltx:note class='child'>#1</ltx:note>");
+DefConstructor('\probalternative{}',"<ltx:note class='alt'>#1</ltx:note>");
+
+DefConstructor('\itemtrue',"<ltx:item><ltx:tag>true</ltx:tag>");
+DefConstructor('\itemfalse',"<ltx:item><ltx:tag>false</ltx:tag>");
+
+1;

@@ -1,0 +1,96 @@
+\renewenvironment{theme}[2]{\subsection{#1}}{}
+%\renewenvironment{memo}{\comment}{\endcomment}
+\renewenvironment{memo}{}{}
+\renewenvironment{prob}{}{}
+\renewenvironment{ans}{\comment}{\endcomment}
+\renewenvironment{sol}{\comment}{\endcomment}
+\renewenvironment{rem}{\comment}{\endcomment}
+\renewenvironment{forta}{\comment}{\endcomment}
+\renewenvironment{comm}{\comment}{\endcomment}
+
+\renewcommand{\probid}[1]{\gdef\theprobid{#1}}
+\renewcommand{\probtag}[1]{}
+\renewcommand{\probtodo}[1]{}
+\renewcommand{\probnote}[1]{}
+\renewcommand{\probcourse}[1]{}
+\renewcommand{\probquiztype}[1]{}
+\renewcommand{\probtimestamp}[1]{}
+\renewcommand{\probused}[1]{}
+\renewcommand{\probparent}[1]{}
+\renewcommand{\probchild}[1]{}
+\renewcommand{\probalternative}[1]{}
+% \newcommand{\probid}[1]{\item[prob-id]#1}
+% \newcommand{\probtag}[1]{prob-tag #1}
+% \newcommand{\probtodo}[1]{prob-todo #1}
+% \newcommand{\probnote}[1]{prob-note #1}
+% \newcommand{\probcourse}[1]{prob-course #1}
+% \newcommand{\probquiztype}[1]{prob-quiztype #1}
+% \newcommand{\probtimestamp}[1]{prob-timestamp #1}
+% \newcommand{\probused}[1]{prob-used #1}
+% \newcommand{\probparent}[1]{prob-parent #1}
+% \newcommand{\probchild}[1]{prob-child #1}
+% \newcommand{\probalternative}[1]{prob-alternative #1}
+
+% \newcommand{\itemtrue}{\item}
+% \newcommand{\itemfalse}{\item}
+
+
+
+
+% \newenvironment{theme}[3][]{}{}
+%   \newenvironment{summary}{}{}
+%   \newenvironment{prob}{}{}
+%   \newenvironment{soln}{}{}
+%   \newenvironment{sol}{}{}
+%   \newenvironment{forta}{}{}
+%    \newenvironment{rem}{}{}
+%   \newenvironment{memo}{}{}
+% %  \newtheorem{prob}{萓矩｡迎
+\newtheorem{quiz}{Quiz}
+% \excludeversion{prob}
+
+\newcommand{\probmode}{
+\renewenvironment{theme}[2][]{\begin{exampleblock}{Quiz(##2)}}{\end{exampleblock}}
+%\renewenvironment{memo}{\comment}{\endcomment}
+\renewenvironment{memo}{}{}
+\renewenvironment{prob}{}{}
+\renewenvironment{ans}{\comment}{\endcomment}
+\renewenvironment{sol}{\comment}{\endcomment}
+\renewenvironment{rem}{\comment}{\endcomment}
+\renewenvironment{forta}{\comment}{\endcomment}
+\renewenvironment{comm}{\comment}{\endcomment}
+ 
+\renewcommand{\itemtrue}{\item<-2 | alert@2 | handout:1>}
+\renewcommand{\itemfalse}{\item<-1 | handout:1>}
+}
+
+\newcommand{\solmode}{
+\renewenvironment{theme}[2][]{\structure{Quiz解答:##2}}{}
+%\renewenvironment{memo}{\comment}{\endcomment}
+\renewenvironment{memo}{}{}
+\renewenvironment{prob}{\comment}{\endcomment}
+\renewenvironment{ans}{\comment}{\endcomment}
+\renewenvironment{sol}{}{}
+\renewenvironment{rem}{\comment}{\endcomment}
+\renewenvironment{forta}{\comment}{\endcomment}
+\renewenvironment{comm}{\comment}{\endcomment}
+
+\renewcommand{\itemtrue}{\item}
+\renewcommand{\itemfalse}{\item}
+}
+
+
+\newcommand{\ansmode}{
+\renewenvironment{theme}[2][]{\structure{Quiz略解:##2}}{}
+%\renewenvironment{memo}{\comment}{\endcomment}
+\renewenvironment{memo}{}{}
+\renewenvironment{prob}{\comment}{\endcomment}
+\renewenvironment{ans}{}{}
+\renewenvironment{sol}{\comment}{\endcomment}
+\renewenvironment{rem}{\comment}{\endcomment}
+\renewenvironment{forta}{\comment}{\endcomment}
+\renewenvironment{comm}{\comment}{\endcomment}
+
+\renewcommand{\itemtrue}{\item}
+\renewcommand{\itemfalse}{\item}
+}

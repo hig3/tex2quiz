@@ -1,0 +1,47 @@
+\makeatletter  
+\@ifundefined{thesection}{%
+  \input{../dpreamble.tex}%
+  }{}%
+\makeatother
+
+\begin{theme}{2次元ランダムウォークのラグランジュ表現オイラー表現}
+  \begin{memo}
+      \probid{20120703-02-euler}
+      \probtimestamp{Time-stamp: "2013-02-28 Thu 13:13 JST hig"}
+      \probused{compsci2 2011 L09}
+      \probused{compsci2 2012 L11}
+      \probcourse{compsci2}
+      \probnote{盤を長方形にしたほうが, x,y方向の区別がついて識別性がよかった}
+      \probquiztype{normal}
+  \end{memo}
+\begin{prob}
+  格子点 $\{(x,y)|x,y\in\mathbb{Z}, -10\leq x\leq10, -10\leq y \leq 10\}$ 上を動く4人のランダムウォーカーがいる.
+  \begin{enumerate}
+  \item ラグランジュ表現で用いる配列変数 \verb|x|,
+        オイラー表現で用いる配列変数 \verb|u| の, 型, 配列の次元, 配列のサイズを答えよう.
+  \item 時刻 $t$ における4人の位置はそれぞれ $(-3,2),(4,9),(6,-1),(7,2)$ である. \verb|x|,\verb|u| の値を答えよう. ただし, ぜんぶ列挙しなくても, `これ以外の値はzero' のように答えればよい.
+  \end{enumerate}
+  \end{prob}
+  \begin{sol}
+    \begin{enumerate}
+    \item 
+      \texttt{|int x[4][2];}
+      \texttt{int u[21][21];} 
+    \item 
+      \texttt{int x[][2]={ {-3,2},{4,9},{6,-1},{7,2} };}
+
+      \texttt{u}についてはオフセットを10とすればいい.
+
+      \texttt{u[-3+10][2+10]=1;u[9+10][2+10]=1;u[6+10][-1+10]=1;u[7+10][2+10]=1;}
+
+      それ以外の \texttt{u}はzero.
+    \end{enumerate}
+  \end{sol}
+\end{theme}
+
+\makeatletter
+\@ifundefined{@single}{}{%
+  \end{document}%
+}
+\makeatother
+

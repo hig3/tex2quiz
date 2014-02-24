@@ -1,0 +1,35 @@
+\makeatletter  
+\@ifundefined{thesection}{%
+  \input{../dpreamble.tex}%
+  }%
+\makeatother
+
+
+ \begin{theme}{ベクトル場の渦度}
+   \begin{memo}
+     \probid{20110616-01-curl}\probcourse{vector}
+     \probquiztype{calculated}
+     \probtimestamp{Time-stamp: "2013-02-28 Thu 14:11 JST hig"}
+     \probused{vector 2011 L08}
+   \end{memo}
+
+  \begin{prob}
+ベクトル場 $${\bf V}({\bf r})=({a}xy^3+{b}x^2,{c}x)$$ の渦度の, $${\bf r}=({x},{y})$$における値を求めよう.
+  \end{prob}
+  \begin{sol}
+$$(\nabla\times{\bf V})_z=\frac{\partial}{\partial x} {c}x - \frac{\partial}{\partial y}({a}xy^3+{b}x^2)$$.
+    \end{sol}
+    \begin{ans}
+$${c}-3*{a}*{x}*{y}*{y}$$      
+    \end{ans}
+\end{theme}
+
+
+
+
+\makeatletter
+\@ifundefined{@single}{}{%
+  \end{document}%
+}
+\makeatother
+

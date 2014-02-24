@@ -1,0 +1,34 @@
+\makeatletter  
+\@ifundefined{thesection}{%
+  \input{../dpreamble.tex}%
+  }%
+\makeatother
+\begin{theme}{波動方程式の直観的意味}
+  \begin{memo}
+    \probid{20120126-01-wave-eqn-choice}
+    \probcourse{mathphb}
+    \probtimestamp{Time-stamp: "2014-02-24 Mon 18:23 JST hig"}
+    \probused{mathphb 2011 exam02}
+  \end{memo}
+\begin{prob}
+波動(長さ$L$の弦の振動)を考え, 位置 $x$, 時刻 $t$ の変位を $u(x,t)$ とする. 次の説明のうち, 正しいものの番号をすべて挙げよう.
+  \begin{enumerate}
+  \itemtrue 弦の形で, 周囲の点よりもでっぱったりへっこんだりしている点には, 元にもどってまっすぐになろうとする力がはたらく
+  \itemfalse 弦のすべての点にはいつでも, 変位ゼロ($u(x,t)=0$)にもどそうとする力がはたらく
+  \itemtrue 形を変えずに, 時間とともに $x$ 方向にそのまま移動していくような波動がある
+  \itemfalse 1個の弦でも, 形を変えずに移動していく, いろいろな速さの波動がある
+  \itemtrue $\frac{u(0.5L,t)}{u(0.1L,t)}$ が$t$ によらない定数であるような解がある(ただし分母が0になる時刻$t$は考えない)
+  \end{enumerate}
+  \end{prob}
+\begin{sol}
+  1,3,6
+\end{sol}
+\end{theme}
+
+\makeatletter
+\@ifundefined{@single}{}{%
+  \end{document}%
+}
+\makeatother
+
+

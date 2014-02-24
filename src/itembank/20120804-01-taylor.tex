@@ -1,0 +1,40 @@
+\makeatletter  
+\@ifundefined{thesection}{%
+  \input{../dpreamble.tex}%
+  }%
+\makeatother
+
+\begin{theme}{テイラー展開}
+  \begin{memo}
+    \probid{20120804-01-taylor}
+    \probtimestamp{Time-stamp: "2012-08-04 Sat 07:38 JST hig"}
+    \probcourse{mathphb}
+    \probused{mathphb 2011 rev}
+    \probquiztype{multichoice}
+  \end{memo}
+  \begin{prob}
+    関数 $f(x)=\frac{x}{\sqrt{4+x^2}}$ の, 
+    $x=0$ における1次までのテイラー展開を求めよう.
+    \begin{enumerate}
+      \itemtrue $0+\frac{1}{2}x+\cdots$
+      \itemfalse $0+x+\cdots$
+      \itemfalse $\frac{x}{\sqrt{4+x^2}}+\frac{4}{(4+x^2)^{3/2}}x+\cdots$
+      \itemfalse $0+0x+\cdots$
+      \itemfalse $\frac12+\frac12x+\cdots$
+    \end{enumerate}
+  \end{prob}
+
+  \begin{sol}
+    テイラー展開って多項式みたいな形になるでしょ〜
+  \end{sol}
+  \begin{answer}
+  \end{answer}
+\end{theme}
+
+\makeatletter
+\@ifundefined{@single}{}{%
+  \end{document}%
+}
+\makeatother
+
+

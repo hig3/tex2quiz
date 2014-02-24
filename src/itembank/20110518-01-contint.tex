@@ -1,0 +1,38 @@
+\makeatletter  
+\@ifundefined{thesection}{%
+  \input{../dpreamble.tex}%
+  }%
+\makeatother
+
+
+ \begin{theme}{ベクトル場の線積分}
+   \begin{memo}
+     \probid{20110518-01-contint}
+     \probcourse{vector}
+     \probtimestamp{Time-stamp: "2014-02-24 Mon 18:23 JST hig"}
+     \probused{vector 2011 L06, review}
+     \probquiztype{calculation}
+     \probnote{variables a=2,3,4. b=1,2,3. c=1,2,3.}
+   \end{memo}
+  \begin{prob}
+ベクトル場 $${\bf\mathrm{V}}({\bf\mathrm{r}})=({a}y,-{b})$$ と, 曲線 $$C$$: $${\bf\mathrm{r}}(t)=(2t^2,-t)$$, $$(0\leq t \leq 3)$$を考える. ただし, 始点は$${\bf\mathrm{r}}(0)$$, 終点は$${\bf\mathrm{r}}( {c} )$$である.
+
+ベクトル場$${\bf\mathrm{V}}({\bf\mathrm{r}})$$の曲線$$C$$に沿った線積分 $$\int_C{\bf\mathrm{V}}\cdot d{\bf\mathrm{r}}$$ を求めよう.
+  \end{prob}
+  \begin{sol}
+$$(-4/3)*{a}*{c}*{c}*{c}+{b}*{c}$$
+    \end{sol}
+  \begin{ans}
+$$(-4/3)*{a}*{c}*{c}*{c}+{b}*{c}$$
+    \end{ans}
+\end{theme}
+
+
+
+
+\makeatletter
+\@ifundefined{@single}{}{%
+  \end{document}%
+}
+\makeatother
+

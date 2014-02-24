@@ -1,0 +1,41 @@
+\makeatletter  
+\@ifundefined{thesection}{%
+  \input{../dpreamble.tex}%
+  }{}%
+\makeatother
+
+ \begin{theme}{標準偏差}
+   \begin{memo}
+     \probid{20120730-02-inverse}
+     \probcourse{compsci2}
+     \probtimestamp{Time-stamp: "2013-02-28 Thu 13:12 JST hig"}
+     \probused{compsci2 2012 exam05}
+     \probquiztype{normal}
+   \end{memo}
+  \begin{prob}
+連続値確率変数 $S$ は確率密度関数
+    \begin{equation*}
+      p(s)=
+      \begin{cases}
+        \frac{1}{\log 3}\frac1s& (1\leq s <3)\\
+        0               & (\text{他})
+      \end{cases}
+    \end{equation*}
+に従う. $S$ の母標準偏差を求めよう.
+  \end{prob}
+  \begin{sol}
+母分散は
+    \begin{equation*}
+    \int_1^3 s^2p(s)\;\mathrm{d} s-
+\left(    \int_1^3 s\; p(s)\;\mathrm{d} s\right)^2=\frac{4}{\log3}-\frac{4}{(\log3)^2}.
+    \end{equation*}
+よって母標準偏差は $2(\frac{1}{\log3}-\frac{1}{(\log3)^2})^{1/2}$.
+  \end{sol}
+\end{theme}
+
+\makeatletter
+\@ifundefined{@single}{}{%
+  \end{document}%
+}
+\makeatother
+
