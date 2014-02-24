@@ -12,13 +12,13 @@ Presentation at MoodleMoot Japan 2012 in Mie Poster at PC Conference 2012 in Kyo
 
 # List of Files
 
-|src/example-*.tex|	目的別のサンプル. |
-|src/itembank/*.tex|	個々の問題. これを example-*.tex が input している. また, これをそのまま latex することもできる.|
-|src/dpreamble.tex|	個々の問題を単独で latex するときに使われる.|
-|src/t2q.sty|	かならず usepackage するパッケージ|
-|src/t2q-*.sty|	タイプセット目的に応じて usepackage するパッケージ|
-|src/t2q-*.sty.ltxml|	LaTeXML に対して, sty 内の定義の変換方法を知らせるもの|
-|conv/t2q.py|	example-latexml.tex を LaTeXML で変換して得られる中間 XML を変換する Python script|
+src/example-*.tex:	目的別のサンプル. 
+src/itembank/*.tex:	個々の問題. これを example-*.tex が input している. また, これをそのまま latex することもできる.
+src/dpreamble.tex:	個々の問題を単独で latex するときに使われる.
+src/t2q.sty:	かならず usepackage するパッケージ
+src/t2q-*.sty:	タイプセット目的に応じて usepackage するパッケージ
+src/t2q-*.sty.ltxml:	LaTeXML に対して, sty 内の定義の変換方法を知らせるもの
+conv/t2q.py:	example-latexml.tex を LaTeXML で変換して得られる中間 XML を変換する Python script
 
 
 #使い方
@@ -55,10 +55,9 @@ latexmlpost --format=xhtml --dest=web.xhtml intermediate.xml
 ```
 format には次の可能性.
 
-|xhtml|MathMLが使われる. Webサーバの設定で, ヘッダを Content-Type:application/xhtml+xml にしないといけない. PHPのheader関数でするのが簡単かも. また, <title/> となってブラウザによってはエラーになるので手で編集する必要がある.
-|html|
-数式は, LaTeXでイメージファイルとして作られるので, これらを DocumentRoot下に同時にコピーする必要がある
-|html5|未検証|
+xhtml:MathMLが使われる. Webサーバの設定で, ヘッダを Content-Type:application/xhtml+xml にしないといけない. PHPのheader関数でするのが簡単かも. また, <title/> となってブラウザによってはエラーになるので手で編集する必要がある.
+html:数式は, LaTeXでイメージファイルとして作られるので, これらを DocumentRoot下に同時にコピーする必要がある
+html5:未検証
 
 LaTeXML付属のスタイルファイル (/opt/local/lib/perl5/site_perl/5.12.3/LaTeXML/style/*) もDocumentRoot下にコピーする必要. (macports の ver ... で検証している)
 ##Moodle XMLに変換してMoodleにインポート
